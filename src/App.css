@@ -1,0 +1,84 @@
+.Hero {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#increase,
+#decrease {
+  width: fit-content;
+  border-radius: 25px;
+  font-size: 25px;
+  padding: 8px;
+  background-color: rgb(16, 202, 193);
+  border: none;
+}
+
+#decrease {
+  display: none;
+}
+
+.Hero .pop-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+.showen {
+  display: none !important;
+}
+
+.pop-up {
+  width: 40%;
+  background-color: rgb(16, 202, 193);
+  border-radius: 25px;
+}
+
+.pop-up .popup-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  padding: 10px;
+  gap: 20px;
+}
+
+.pop-up .popup-buttons .topopup-butn {
+  border: none;
+  width: 50%;
+  border-radius: 25px;
+  font-size: 25px;
+  padding: 5px;
+}
+
+#orginal-bg {
+  font-size: 25px;
+  border: none;
+  width: 125%;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+@media(max-width:350px) {
+  .pop-up h1 {
+    font-size: 18px;
+  }
+
+  .pop-up {
+    width: 75%;
+  }
+
+  .pop-up .popup-buttons .topopup-butn {
+    font-size: 15px;
+  }
+
+  #orginal-bg {
+    font-size: 15px;
+  }
+}
